@@ -1,4 +1,8 @@
+import 'package:intl/intl.dart';
+
 void main() {
-  // Implement an extension on [DateTime], returning a [String] in format of
-  // `YYYY.MM.DD hh:mm:ss` (e.g. `2023.01.01 00:00:00`).
+  DateTime now = DateTime.now();
+
+  String formatted = DateFormat('yyyy.MM.dd HH:mm:ss').format(now);
+  print(formatted); 
 }
